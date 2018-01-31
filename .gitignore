@@ -17,3 +17,15 @@
 /tmp
 /config/database.yml
 /public/system
+
+
+# Ignore folders in public
+public/resources
+
+# Ignore private resources folder
+/resources
+
+# Ignore vendor
+/vendor/bundle
+
+/shared

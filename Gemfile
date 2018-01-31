@@ -1,13 +1,9 @@
 source 'https://rubygems.org'
 
-ruby '2.2.1'
+ruby '2.4.1'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.2.3'
-
-group :production do
-  gem 'rails_12factor', '~> 0.0.3'
-end
+gem 'rails', '4.2.8'
 
 group :development, :test do
   gem 'better_errors', '~> 2.1.1'
@@ -35,8 +31,6 @@ gem "activeadmin", github: "activeadmin"
 gem "sidekiq", '~> 3.4.1'
 
 gem 'exception_notification', '~> 4.1.1'
-
-gem 'puma', '~> 2.11.3'
 
 gem 'mail', '~> 2.6.3'
 
