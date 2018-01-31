@@ -1,0 +1,35 @@
+/ %a.btn.btn-dark.btn-lg.toggle{:href => "/contact"} HIRE US
+= link_to t("header.hire_us"), page_path("contact-us"), :class => "btn btn-primary btn-lg toggle", :id => "hire-us"
+%a#menu-toggle.btn.btn-dark.btn-lg.toggle{:href => "#"}
+  %i.fa.fa-bars
+
+.container-fluid.logo
+  = link_to root_path do
+    = image_tag "logo.png", :alt => t("header.logo_text"), :class => "img-responsive"
+
+%nav#sidebar-wrapper  
+  %ul.sidebar-nav
+    %a#menu-close.btn.btn-light.btn-lg.pull-right.toggle{:href => "#"}
+      %i.fa.fa-times
+    %li.sidebar-brand      
+      = link_to t("header.home"), root_path
+    %li
+      = link_to t("header.company"), page_path("about-us")      
+    %li
+      = link_to t("header.testimonials"), page_path("testimonials")
+    %li
+      = link_to t("header.services"), page_path("specialization")      
+    %li
+      = link_to t("header.work"), page_path("portfolio") 
+    / %li
+    /   = link_to t("header.team"), page_path("team")           
+    %li
+      = link_to t("header.process"), page_path("process")
+    %li
+      = link_to t("header.careers"), page_path("careers")      
+    %li
+      = link_to t("header.training"), page_path("training")      
+    %li
+      = link_to t("header.contact"), page_path("contact-us")
+    / %li
+    /   = link_to t("header.blog"), page_path("blog")

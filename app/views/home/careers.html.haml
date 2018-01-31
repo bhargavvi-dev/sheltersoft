@@ -1,0 +1,56 @@
+%header.careers
+  .header-content
+    .header-content-inner
+      %h1=t("careers.text_h1")
+      %hr
+        %p=t("careers.text_p")
+%h2.text-center= t("careers.careers_with_us")        
+%section#careers
+  .container    
+    .row.no-gutter
+      - if @careers.present?
+        - @careers.each do |career|
+          .col-lg-12
+            %h4.orange.pad10= career.role
+          .col-lg-12
+            %p= career.description.html_safe
+          .col-lg-12
+            .col-lg-2.orange
+              %strong= t("careers.key_skills")
+            .col-lg-10
+              %p= career.key_skills
+          .col-lg-12              
+            .col-lg-2.orange
+              %strong= t("careers.location")
+            .col-lg-10
+              %p= career.location
+          .col-lg-12              
+            .col-lg-2.orange
+              %strong= t("careers.requirements")
+            .col-lg-10
+              %p= career.requirements.html_safe
+          .col-lg-12              
+            .col-lg-2.orange
+              %strong= t("careers.qualifications")
+            .col-lg-10
+              %p= career.qualifications.html_safe
+          .col-lg-12              
+            .col-lg-2.orange
+              %strong= t("careers.responsibilities")
+            .col-lg-10
+              %p= career.responsibilities.html_safe
+          .col-lg-12              
+            .col-lg-2.orange
+              %strong= t("careers.bonus_points")
+            .col-lg-10
+              %p= career.bonus_points.html_safe     
+          .col-lg-12
+            .col-lg-offset-6
+              %h4.pad10
+                = link_to t("general.apply_for_job"), new_career_career_apply_path(career.id), :class => "btn btn-primary"
+          .col-lg-12
+            %hr.light
+      - else
+        .col-lg-12.col-md-6.text-center
+          .service-box
+            %h1=t("general.coming_soon")

@@ -1,0 +1,24 @@
+%tr
+  %td{:align => "center", :style => "-webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; mso-table-lspace:0pt; mso-table-rspace:0pt;", :valign => "top"}
+    / BEGIN FOOTER //
+    %table#templateFooter{:border => "0", :cellpadding => "0", :cellspacing => "0", :style => "background-color:#F4F4F4; border-top:1px solid #cccccc;", :width => "100%"}
+      %tr
+        %td.footerContent{"mc:edit" => "footer_content01", :style => "-webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; mso-table-lspace:0pt; mso-table-rspace:0pt; color:#808080; font-family:Helvetica; font-size:10px; line-height:150%; padding-top:0px 20px; padding-right:20px; padding-bottom:0px 20px; padding-left:20px; text-align:left;", :valign => "top"}
+          %em Copyright © 2015  ByteScout License Management, LLC., All rights reserved.
+          %br/
+          /*|IFNOT:ARCHIVE_PAGE|* *|LIST:DESCRIPTION|*
+          %br/
+          %br/
+          %strong= t("general.our_mailing_address_is")
+          %br/
+          = t("footer.info_email")
+          /*|HTML:LIST_ADDRESS_HTML|* *|END:IF|*
+      %tr
+        %td.footerContent{"mc:edit" => "footer_content02", :style => "padding-top:0; padding-bottom:40px; -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; mso-table-lspace:0pt; mso-table-rspace:0pt; color:#808080; font-family:Helvetica; font-size:10px; line-height:150%; padding-top:20px; padding-right:20px; padding-bottom:20px; padding-left:20px; text-align:left;", :valign => "top"}
+          = link_to t("general.unsubscribe_from_this_list"), "javascript:void(0)", :style => "color:#606060; font-weight:normal; text-decoration:underline; padding:3px;"
+          /%a{:href => "*|UNSUB|*", :style => "color:#606060; font-weight:normal; text-decoration:underline; padding:3px;"}= t("general.unsubscribe_from_this_list")
+          \   
+          = succeed "\u{a0}" do
+            = link_to t("general.update_subscription_preferences"), "javascript:void(0)", :style => "color:#606060; font-weight:normal; text-decoration:underline; padding:5px;"
+            /%a{:href => "*|UPDATE_PROFILE|*", :style => "color:#606060; font-weight:normal; text-decoration:underline; padding:5px;"}= t("general.update_subscription_preferences")
+    / // END FOOTER

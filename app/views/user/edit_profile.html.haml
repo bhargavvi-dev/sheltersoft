@@ -1,0 +1,26 @@
+.mainContainer
+  .loginPage
+    .container
+      %h1.pageTitle
+        = t('general.edit_profile')
+      .row 
+        .col-xs-12.col-sm-10.col-sm-offset-1.col-md-8.col-md-offset-2
+          .formBox
+            = form_for(@user, :url => update_profile_path) do |f|
+              .form-group
+                = f.text_field :first_name, autofocus: true, :class => "form-control", :placeholder => t("general.fname")
+                - if @user.errors["first_name"].any?
+                  .errorMsg
+                    = @user.errors["first_name"][0]
+              .form-group
+                = f.text_field :last_name, autofocus: true, :class => "form-control", :placeholder => t("general.lname")
+                - if @user.errors["last_name"].any?
+                  .errorMsg
+                    = @user.errors["last_name"][0]
+              .form-group
+                = f.text_field :company, autofocus: true, :class => "form-control", :placeholder => t("general.company")
+                - if @user.errors["company"].any?
+                  .errorMsg
+                    = @user.errors["company"][0]
+              .form-button
+                = f.submit t('general.update') , :class => "btn btn-success", :data => {:disable_with => t('general.updating')}

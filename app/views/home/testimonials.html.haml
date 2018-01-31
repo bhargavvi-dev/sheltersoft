@@ -1,0 +1,25 @@
+%header.testimonials
+  .header-content
+    .header-content-inner
+      %h1=t("testimonials.text_h1")
+      %hr
+        %p=t("testimonials.text_p")
+
+%section#testimonials
+  .container
+    .row
+      - if @testimonials.present?
+        - @testimonials.each do |testimonial|
+          .col-lg-12
+            .col-lg-2
+              %h4= testimonial.client_name
+              = testimonial.client_position
+              %h6= image_tag(testimonial.avatar.url(:small), class: "img-responsive img-circle")
+            .col-lg-10.orange.pad10
+              %h4= testimonial.description.html_safe if testimonial.description.present?
+          .col-lg-12
+            %hr.light
+      - else
+        .col-lg-12.col-md-6.text-center
+          .service-box
+            %h1=t("general.coming_soon")

@@ -1,0 +1,27 @@
+#contact
+  %footer
+    .container
+      .row
+        .col-lg-8.col-lg-offset-2.text-center
+          %h2.section-heading=t("footer.header")
+          %hr.primary
+            %p=t("footer.header_text")
+        .col-lg-4.col-lg-offset-2.text-center
+          %i.fa.fa-phone.fa-3x.wow.bounceIn
+          %p=t("footer.mobile")
+        .col-lg-4.text-center
+          %i.fa.fa-envelope-o.fa-3x.wow.bounceIn{"data-wow-delay" => ".1s"}
+          %p
+            %a{:href => "mailto:#{t('footer.email')}"}=t("footer.email")
+      .row
+        .col-lg-10.col-lg-offset-1
+          .col-lg-3
+            %h6=t("footer.footer_llc")
+          .col-lg-6
+            %h6=t("footer.footer_text")
+          / .col-lg-3
+          /   %ul
+          /     %li
+          /       = link_to t("footer.disclaimer"), page_path("disclaimer")
+          /     %li
+          /       = link_to t("footer.privacypolicy"), page_path("privacypolicy")          

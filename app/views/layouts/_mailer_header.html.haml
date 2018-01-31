@@ -1,0 +1,25 @@
+%tr
+  %td{:align => "center", :valign => "top"}
+    / BEGIN PREHEADER //
+    %table#templatePreheader{:border => "0", :cellpadding => "0", :cellspacing => "0", :style => "background-color:#F4F4F4; border-bottom:1px solid #CCCCCC; border-collapse: collapse;", :width => "100%"}
+      %tr
+        %td.preheaderContent{"mc:edit" => "preheader_content00", :style => "color:#808080; font-family:Helvetica; font-size:10px; line-height:125%; text-align:left; padding-top:10px; padding-right:20px; padding-bottom:10px; padding-left:20px;", :valign => "top"}
+          = t("general.area_of_email")
+        / *|IFNOT:ARCHIVE_PAGE|*
+        %td.preheaderContent{"mc:edit" => "preheader_content01", :style => "color:#808080; font-family:Helvetica; font-size:10px; line-height:125%; text-align:left; padding-top:10px; padding-right:20px; padding-bottom:10px; padding-left:0;", :valign => "top", :width => "180"}
+          = t("general.email_not_displaying_correctly")
+          %br/
+          = succeed "." do
+            = link_to t("general.view_in_browser"), "javascript:void(0)", :style => "color:#606060; font-weight:normal; text-decoration:underline;"
+            /%a{:href => "*|ARCHIVE|*", :style => "color:#606060; font-weight:normal; text-decoration:underline;", :target => "_blank"}= t("general.view_in_browser")
+        / *|END:IF|*
+    / // END PREHEADER
+%tr
+  %td{:align => "center", :style => "-webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; mso-table-lspace:0pt; mso-table-rspace:0pt;", :valign => "top"}
+    / BEGIN HEADER //
+    %table#templateHeader{:border => "0", :cellpadding => "0", :cellspacing => "0", :style => "background-color:#F4F4F4; border-top:1px solid #FFFFFF; border-bottom:1px solid #CCCCCC;", :width => "100%"}
+      %tr
+        %td.headerContent{:style => "-webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; mso-table-lspace:0pt; mso-table-rspace:0pt; color:#505050; font-family:Helvetica; font-size:20px; font-weight:bold; line-height:100%; padding-top:0; padding-right:0; padding-bottom:0; padding-left:0; text-align:center; vertical-align:middle; background: #fff", :valign => "top"}
+          %h4= t("general.company_name")
+
+    / // END HEADER

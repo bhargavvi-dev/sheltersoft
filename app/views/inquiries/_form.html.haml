@@ -1,0 +1,13 @@
+- if notice.present?
+  .padding-left.margin-top.alert.alert-success{:role => "alert"}
+    %i.margin-left-small.form-message-icon.margin-right-small.icon.icon-notification
+    = notice
+
+= bootstrap_form_for(Inquiry.new, :remote => true) do |f|
+  = hidden_field_tag :authenticity_token, form_authenticity_token
+  = f.text_field :name, :required => true, hide_label: true, :placeholder => "Your Name"
+  = f.email_field :email, :required => true, hide_label: true, :placeholder => "Email"
+  = f.text_field :phone, :required => true, hide_label: true, :placeholder => "Phone"
+  = f.text_field :skype_id, :required => false, hide_label: true, :placeholder => "Skype ID"
+  = f.text_area :message, :required => true, hide_label: true, placeholder: "Leave a message..."
+  = f.submit "Send", :class => "btn btn-primary btn-lg"

@@ -1,0 +1,13 @@
+.row.orderHead
+  .col-xs-12.col-lg-8.col-lg-offset-2.text-center
+    - if @static_page
+      %h1.pageTitle
+        = @static_page.name.html_safe
+      %p
+        - if @static_page.present? and @static_page.content.present?
+          = @static_page.content.html_safe
+    - else
+      %h1.pageTitle
+        = t("page_not_found")     
+
+        

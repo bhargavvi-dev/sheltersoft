@@ -1,0 +1,22 @@
+%section#portfolio.no-padding
+  .container-fluid
+    .row.no-gutter
+      %h2.text-center
+        = t("general.our_work")
+      - if @projects.count > 0
+        - @projects.each_with_index do |project, i|
+          .col-lg-4.col-sm-6
+            = link_to "javascript:void(0)", :class => "portfolio-box" do
+              = image_tag(avatar_image_url(project.avatar.url(:medium)), class: "img-responsive")
+              .portfolio-box-caption
+                .portfolio-box-caption-content
+                  .project-category.text-faded
+                    = project.name
+                  .project-name
+                    %strong= project.technologies
+                  %hr
+                    = project.description
+      - else
+        .col-lg-12.col-md-6.text-center
+          .service-box
+            %h1=t("general.coming_soon")

@@ -1,0 +1,9 @@
+= bootstrap_form_for([:career, @career_apply]) do |f|
+  = hidden_field_tag :authenticity_token, form_authenticity_token
+  = f.hidden_field :career_id, :value => @career.id
+  = f.text_field :name, :required => true, hide_label: true, :placeholder => "Your Name"
+  = f.email_field :email, :required => true, hide_label: true, :placeholder => "Email"
+  = f.text_area :message, :required => true, hide_label: true, placeholder: "Leave a message..."
+  = f.file_field :resume, label: "Please upload your CV (pdf/word file only)"
+  = link_to "Back", page_path("careers"), :class => "btn btn-lg"
+  = f.submit "Submit", :class => "btn btn-primary btn-lg"

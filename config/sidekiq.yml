@@ -1,0 +1,7 @@
+:verbose: false
+:queues:
+  - default
+  - paperclip
+:concurrency: 1
+production:
+  :concurrency: 2

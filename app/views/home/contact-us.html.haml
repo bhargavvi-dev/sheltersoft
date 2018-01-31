@@ -1,0 +1,33 @@
+%header.contact
+  .header-content
+    .header-content-inner
+      %h1=t("contact.text_h1")
+      %hr
+        %p=t("contact.text_p")
+
+%section#services
+  .container
+    .row
+      .col-lg-12
+        .col-lg-6
+          .service-box
+            %i.fa.fa-4x.fa-paper-plane.wow.bounceIn.text-primary{"data-wow-delay" => ".1s"}
+            %h3=t("contact.address1_title")
+            .grey.pad10
+              %p.text-muted=t("contact.address1_text").html_safe        
+          .service-box
+            %i.fa.fa-4x.fa-paper-plane.wow.bounceIn.text-primary
+            %h3=t("contact.address_title")
+            .grey.pad10
+              %p.text-muted=t("contact.address_text").html_safe
+        .col-lg-6
+          .service-box
+            / %i.fa.fa-4x.fa-paper-plane.wow.bounceIn.text-primary{"data-wow-delay" => ".1s"}
+            %h2.text-center=t("contact.form_title")
+          #inquiry_form
+            = render 'inquiries/form'
+
+/ .container
+/   .row
+/     .col-lg-12.col-md-6.col-sm-3.text-center
+/       %iframe{:allowfullscreen => "", :frameborder => "0", :height => "400", :src => "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3671.9049481842485!2d72.4846358988613!3d23.027261984876862!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e9b12f41d6a7d%3A0x36f22b6d3e5e120!2sAbhishree+Corporate+Park%2C+Ambli+Rd%2C+Ambli%2C+Ahmedabad%2C+Gujarat+380058!5e0!3m2!1sen!2sin!4v1449232415286", :style => "border:0", :width => "800"}

@@ -1,0 +1,214 @@
+# Files in the config/locales directory are used for internationalization
+# and are automatically loaded by Rails. If you want to use locales other
+# than English, add the necessary files in this directory.
+#
+# To use the locales, use `I18n.t`:
+#
+#     I18n.t 'hello'
+#
+# In views, this is aliased to just `t`:
+#
+#     <%= t('hello') %>
+#
+# To use a different locale, set it with `I18n.locale`:
+#
+#     I18n.locale = :es
+#
+# This would use the information in config/locales/es.yml.
+#
+# To learn more, please read the Rails Internationalization guide
+# available at http://guides.rubyonrails.org/i18n.html.
+
+en:
+  active_admin:
+    dashboard: "Dashboard"
+    dashboard_welcome:
+      welcome: " Welcome to ShelterSoft."
+  general:
+    apply_for_job: "Apply for job"
+    our_work: "Our Work"
+    our_team: "Our Team"
+    coming_soon: "coming soon..."
+    company_name: "ShelterSoft"
+    title: "Agile Ruby on Rails Development and Consultancy | ShelterSoft"
+    sign_in_successfully: "Sign in successfully."
+    about: "About"
+    home: "Home"  
+    login: "Login"
+    have_an_account: "HAVE AN ACCOUNT?"
+    fogot_password: "FORGOT PASSWORD?"
+    create_an_account: "CREATE AN ACCOUNT"
+    change_password: "Change Password"
+    edit_profile: "Edit Profile"
+    edit: "Edit"
+    update: "UPDATE"
+    cancel_my_account: "CANCEL MY ACCOUNT"
+    back: "BACK"
+    cancel: "Cancel"
+    confirmation_password: "Confirmation password"
+    profile_updated_successfully: "Profile updated successfully."
+    password_updated_successfully: "Password updated successfully."  
+    hello_name: "Hello %{name},"
+    hello_admin: "Hello Admin,"
+    welcome_email: "Welcome %{email}!"
+    hello_fname: "Hello %{fname}!"
+    hello_email: "Hello %{email}!"
+    confirm_email: "You can confirm your account email through the link below:"
+    confirm_my_account: "Confirm my account"
+    request_to_change_password: "Someone has requested a link to change your password. You can do this through the link below."
+    change_my_password: "Change my password"
+    ignore_email: "If you didn't request this, please ignore this email. Your password won't change until you access the link above and create a new one."
+    account_locked: "Your account has been locked due to an excessive number of unsuccessful sign in attempts."
+    unlock_your_account: "Click the link below to unlock your account:"
+    unlock_my_account: "Unlock my account"        
+  header:
+    training: "Training"
+    process: "Process"
+    testimonials: "Testimonials"
+    hire_us: "Hire US"
+    home: "Home"
+    company: "About Us"
+    services: "Specialization"
+    work: "Portfolio"
+    contact: "Contact Us"
+    blog: "Blog"
+    team: "Team"
+    careers: "Careers"
+    logo_text: "ShelterSoft"
+  footer:
+    header: "Let's Get In Touch!"
+    header_text: "Always Ready to start project with us? That's really great! Send us an email and we will get back to you as soon as possible!"
+    mobile: "+91 90-33-194939"
+    email: "contact@sheltersoft.in"
+    info_email: "contact@sheltersoft.in"
+    footer_llc: "© 2014–2015 ShelterSoft"
+    footer_text: "ShelterSoft is a leading Ruby on Rails & mobile solution company which provides consulting services and more. Our developers are an expert in Ruby, Rails, AngularJS, HTML5, and CSS3 and more."
+    disclaimer: "Legal Disclaimer"
+    privacypolicy: "Privacy Policy"
+    about_us: "ABOUT US"
+    about_us_content: "ShelterSoft License Management"
+    crm_licensing: "ShelterSoft License Management"
+    subsidiary: "ShelterSoft License Management. All Rights Reserved."
+    teams_of_service: "TERMS OF SERVICE"
+    privacy_policy: "PRIVACY POLICY"
+    contact_us: "CONTACT US"
+    page_not_found: "Page not found."       
+  home:
+    top:
+      header_h1: "We Build professions from thoughts to Profitability"
+      header_p: "We are delivering Application for Web & Mobile"
+      find_out_more: "Find More"
+    about:
+      header_h1: "WE BUILD WEB AND MOBILE"
+      header_p: "We build functional solutions using Ruby On Rails, Angular JS and more. We deliver your finger tips."
+      get_started: "Get Started"
+    services:
+      header_h1: "Technologies"
+      header_p: "We are Ruby On Rails experts, Building products would not be possible without knowledge and extensive usage of many other things, e.g. Angular/Backbone JS, NodeJS, Realtime Pub/Sub, Redis, NginX, PostgreSQL, AWS, Heroku and many more."  
+      header1_h1: "Front-end"
+      header1_p: "Front end development, also known as a client side development is the practice of producing HTML, Responsive CSS and JavaScript for a website or web application so that a user can see and interact with them directly."
+      header2_h1: "Mobile"
+      header2_p: "Mobile application development is a term used to denote the act or process by which application software is developed for handheld devices, such as personal digital assistants, enterprise digital assistants or mobile phones."
+      header3_h1: "Back-end"
+      header3_p: "The back-end of an application is responsible for things like calculations, business logic, database interactions, and performance. Most of the code that is required to make an application work will be done on the back-end."
+      header4_h1: "Integrations"
+      header4_p: "It's hard to imagine web products not linked to popular services. Our Ruby On Rails developers have implemented a bunch of different integrations, e.g. social networks, payment systems (Paypal, Stripe, Braintree), etc."
+    work:
+      header_h2: "| Agile Ruby on Rails Development and Consultancy |"
+  page_not_found:
+    text_h1: "Page not found."
+    text_p: "Page not found."
+  blog:
+    text_h1: "ShelterSoft Blog"
+    text_p: "Blog on achivements, Product Management, Transparency, Culture and more."  
+  testimonials:
+    text_h1: "Testimonials"
+    text_p: "A Company You Can Trust"      
+  company:
+    about_us_text: "ShelterSoft was started in 2014. We are expert in developing extensive web based application in Ruby On Rails, mobile application, software testing, database migration and graphics designing. The company is located in the city, Ahmedabad in the Gujarat state in India. Our goal is about to focus on your business to make it simpler so that you can weight on what you do best. Many of the big successful organizations rely on ShelterSoft to deliver valuable business value. ShelterSoft provides software development, software consulting, and outsourcing services worldwide. ShelterSoft strongly belive in long term relationships. <br /> <br />Our Strong expertise in Ruby on Rails and Angular JS frameworks being our core area of expertise, our experts stay on the cutting edge of newest and most effective technology trends."
+    about_us: "About Us"
+    text_h1: "Strong expertise"
+    text_p: "With Ruby on Rails and Angular JS frameworks being our core area of expertise, our experts stay on the cutting edge of newest and most effective technology trends."  
+    text1_h1: "Visibility and Control"
+    text1_p: "ShelterSoft culture is all about continuous improvement, finding better ways to increasing quality. We make it possible via two things. First is the new approaches that we adapt to our needs (e.g. Inception, TDD, describing context with issues/benefits/risks, road-maps and users stories). And second is the new technologies that we become experts in, i.e. ReactJS, BackboneJS and AngularJS."
+    text2_h1: "Advantages at ShelterSoft"
+    text2_p: "Very good communication skills, Skilled and dynamic team members, Expert in state-of-the-art technologies, quality checks, Very good support after delivery, You can reach us via Phone, Email, or Chat. We are available 24 x 7."
+  contact:
+    text_h1: "Get in touch"
+    text_p: "Want to discuss your service or help? We’re ready to advice."
+    address_title: "Corporate Office (India)"
+    address_text: "<h4>ShelterSoft</h4><br />501, Landmark Complex,<br />Opposite Seema Hall,<br />Near Titanium City Centre,<br />Anandnagar Road, Satellite, <br />Ahmedabad - Gujarat, India"
+    address1_title: "Call Us"
+    address1_text: "<h4>India</h4><br />Phone: +91 90-33-194939<br />Email: <a href='mailto:contact@sheltersoft.in'><strong>contact@sheltersoft.in</strong></a><br />Skype: sheltersoft"
+    form_title: "Contact Us"
+    success_alert: "Thank you! Your message has been sent"
+    error_alert: "Something wrong...!!!"
+    name_label: "Name*"
+    email_label: "Email*"
+    phone_label: "Phone"
+    skype_label: "Skype"
+    message_label: "Message*"
+  services:
+    text_h1: "Idea to real product (Web & Mobile Services)"
+    text_p: "Smart and effective solutions for your business. Our Specialization are Ruby, Rails, AngularJS, REST API, iOS, Android etc."
+    ruby_on_rails: "Ruby On Rails"
+    ruby_on_rails_desc: "Web development that doesn’t hurt - Ruby on Rails® is an open-source web framework that’s optimized for programmer happiness and sustainable productivity. It lets you write beautiful code by favoring convention over configuration."
+    angularjs: "AngularJS"
+    angularjs_desc: "AngularJS extends HTML with new attributes. AngularJS is perfect for Single Page Applications (SPAs). HTML is great for declaring static documents, but it falters when we try to use it for declaring dynamic views in web-applications. AngularJS lets you extend HTML vocabulary for your application. The resulting environment is extraordinarily expressive, readable, and quick to develop. "
+    mobile_ios_android: "Mobile App (iOS/Android)"
+    mobile_ios_android_desc: "A mobile app is a computer program designed to run on mobile devices such as smartphones and tablet computers. Most such devices are sold with several apps bundled as per-installed software, such as a web browser, email client, calendar, mapping program, and an app for buying music or other media or more apps."
+    designing: "Web Design"
+    designing_desc: "Responsive Web Design (RWD) is a Web design approach aimed at crafting sites to provide an optimal viewing experience—easy reading and navigation with a minimum of resizing, panning, and scrolling—across a wide range of devices (from mobile phones to desktop computer monitors)"    
+    responsive_web_design: "Responsive Web Development"
+    quality_assurance_desc: "Quality Assurance (QA) is a way of preventing mistakes or defects in manufactured products and avoiding problems when delivering solutions or services to customers. QA is applied to physical products in pre -production to verify what will be made meets specifications and requirements, and during manufacturing production runs by validating lot samples meet specified quality controls. QA is also applied to software to verify that features and functionality meet business objectives, and that code is relatively bug free prior to shipping or releasing new software products and versions."
+    quality_assurance_title: "Quality Assurance"
+    iphone_title: "iPhone Application Development"
+    iphone_desc: "ShelterSoft is an iPhone application Development Company based in India has developed an iPhone magazine reader. A simple application to read an image based book. User can zoom-in zoom-out page of book to read it and can change the page of book with swap effect. It gives a real experience of swapping a page of book."
+    android_title: "Android Application Development"
+    android_desc: "Android is a set of software that includes operating system and key applications for mobile. Operating system of android is based on Linux Kernel. Android is not released only by Google but other people of Open Handset Alliance (OHA) are also collaborated on Android release. Now, Android SDK Beta version provides tools and APIs which are required to start developing an application using JAVA (J2ME)."
+    ruby_on_rails_development: "Ruby On Rails Development"
+    angularjs_development: "AngularJS Development"
+  careers:
+    careers_with_us: "Career With Us"
+    text_h1: "Software Engineer at Nurture"
+    text_p: "We believe in creating a workplace that you love being a part of and endeavor hard to build world class products."
+    role: "Role:"
+    key_skills: 'Key Skills:'
+    location: "Location:"
+    requirements: "Requirements:"
+    qualifications: "Qualifications:"
+    responsibilities: "Responsibilities:"
+    bonus_points: "Bonus Points:"
+  team:
+    text_h1: "Meet Our Team"
+    text_p: "ShelterSoft is a community of friendly, collaborative, and professionally growing people. "  
+  work:
+    text_h1: "Case studies & Open Source"
+    text_p: "When we learn something, we write a blog post; when we polish a new development approach, we do a workshop for teams like ours; when we create a new framework, we open source it. "
+  career_apply:
+    upload_cv: "Upload CV"
+    applied_successfully: "You have applied successfully. We will get back to you shortly."
+  process:
+    text_h1: "Our Process"
+    text_p: "Streamlining Tasks to Improve Efficiency"    
+    process_with_us: "Our Web Site Design and Development Process:"
+    header1: "Analyze & Gather Information"
+    desc1: "Initial step for a well-turned web site is to analyze & gather information regarding what has to be done. This is most important and get awareness goals and purpose."
+    header2: "Design Architecture"
+    desc2: "Very important to decide what technologies should be implemented. Decide suitable framework for design and front UI. Complete UI stuffs are discussed when planning the web site."
+    header3: "Design, Development & Testing"
+    desc3: "We are firstly deliver and approved designing ideas with the client until and unless they are satisfied. After that work on actual development and prefer to use third party tools for automatic testing."
+    header4: "Implementation"
+    desc4: "This phase is to deploy applications into production environments. Client should input and verify data, configure and test system and specially security."
+    header5: "Maintenance"
+    desc5: "We are providing support at the end to make changes to improve a system’s performance, fix issues, improve security. We keep care that changes do not affect operations and degrade a performance."
+  training:
+    text_h1: "Learn Real-World Ruby Programming Techniques."
+    text_p: "Beginners Ruby Programming Training - No Experience Required"
+    ruby: "Ruby Programming"
+    ruby_desc: "Ruby is a dynamic, open source, reflective, object-oriented, general-purpose programming language. Ruby was designed to be more powerful than other object-oriented programming languages. In this Ruby training course, teaches you the fundamentals of the Ruby programming language."
+    rails: "Ruby On Rails Framework"
+    rails_desc: "Rails is a web application development framework written in the Ruby language. It is designed to make programming web applications easier by making assumptions about what every developer needs to get started."
+    apply_for_traning: "Our team of developers provide live project training in Ruby On Rails. <a href='/contact-us'>Contact Us</a>"
+  meta:
+    site_name: "Shelter Soft"
