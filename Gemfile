@@ -11,6 +11,9 @@ end
 
 gem 'pg', '0.17.1'
 
+# Expect MySQL as main database
+gem 'mysql2'
+
 #pagination
 gem "will_paginate", '~> 3.0.7'
 
